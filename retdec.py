@@ -31,7 +31,7 @@ class RetDecDecompiler(BackgroundTaskThread):
         self.session_data = {}
 
         if view.arch.name.lower() == "x86_64":
-            show_message_box("RetDec", "RetDec does not support x86_64 decompilation yet...", OKButtonSet, InformationIcon)
+            show_message_box("RetDec", "RetDec does not support x86_64 decompilation yet...", MessageBoxButtonSet.OKButtonSet, MessageBoxIcon.InformationIcon)
             return
 
         self.arch = view.arch.name.lower()
